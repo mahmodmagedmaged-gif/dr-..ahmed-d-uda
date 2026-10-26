@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div id="info"></div>
+<script>
+window.addEventListener('load', () => {
+  document.getElementById('info').innerText = JSON.stringify({
+    innerWidth: window.innerWidth,
+    innerHeight: window.innerHeight,
+    outerWidth: window.outerWidth,
+    outerHeight: window.outerHeight,
+    devicePixelRatio: window.devicePixelRatio
+  });
+  document.title = 'VP:' + window.innerWidth + 'x' + window.innerHeight;
+});
+</script>
+</body>
+</html>
